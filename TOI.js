@@ -51,7 +51,7 @@ app.get('/scrape',function(req,res){
 			
 })
 
-app.listen('8081',function(){
+app.listen(process.env.PORT || 8081,function(){
 	console.log("RUNNING AT 8081..");
 })
 
